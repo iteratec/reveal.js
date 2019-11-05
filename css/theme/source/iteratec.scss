@@ -18,23 +18,23 @@
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
 
-$mainColor: #222;
-$headingColor: #222;
+$mainColor: #000;
+$headingColor: #a92183;
 
-$mainFontSize: 42px;
+$mainFontSize: 1.25em;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
+$headingTextTransform: none;
 $headingFontWeight: 600;
 $linkColor: #2a76dd;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
-$heading1Size: 2.5em;
-$heading2Size: 1.6em;
-$heading3Size: 1.3em;
+$heading1Size: 2.0em;
+$heading2Size: 1.5em;
+$heading3Size: 1.25em;
 $heading4Size: 1.0em;
 
 section.has-dark-background {
