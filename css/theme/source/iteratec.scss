@@ -43,7 +43,107 @@ section.has-dark-background {
 	}
 }
 
-
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+$colorBlueLight: #cde6f5;
+$colorBlueMedium: #91c3e6;
+$colorTurquoise: #008cd2;
+$colorLavender: #e6bedc;
+$colorIteragenta: #a92183;
+$colorPurpleDark: #731964;
+$colorYellowBrown: #ebd7be;
+$colorSand: #e1c39b;
+
+$colorPrimaryGradient: #6a0d58;
+$colorSecondaryGradient: #97127c;
+
+li {
+    list-style-type: none;
+    position: relative;
+}
+
+li::before {
+	content: '\203A';
+	position: absolute;
+	transform: scale(0.8, 1);
+	left: -0.8em;
+	top: -0.25em;
+	font-size: 1.5em;
+	color: $colorIteragenta;
+}
+
+.bg-blue-light {
+	background-color: $colorBlueLight;
+}
+
+.bg-blue-medium {
+	background-color: $colorBlueMedium;
+}
+
+.bg-turquoise {
+	background-color: $colorTurquoise;
+}
+
+.bg-lavender {
+	background-color: $colorLavender;
+}
+
+.bg-iteragenta {
+	background-color: $colorIteragenta;
+}
+
+.bg-purple-dark {
+	background-color: $colorPurpleDark;
+}
+
+.bg-yellow-brown {
+	background-color: $colorYellowBrown;
+}
+
+.bg-sand {
+	background-color: $colorSand;
+}
+
+.blue-light {
+	color: $colorBlueLight;
+}
+
+.blue-medium {
+	color: $colorBlueMedium;
+}
+
+.turquoise {
+	color: $colorTurquoise;
+}
+
+.lavender {
+	color: $colorLavender;
+}
+
+.iteragenta {
+	color: $colorIteragenta;
+}
+
+.purple-dark {
+	color: $colorPurpleDark;
+}
+
+.yellow-brown {
+	color: $colorYellowBrown;
+}
+
+.sand {
+	color: $colorSand;
+}
+
+.slide-title {
+	width: 30%;
+	padding: 40px 35px 30px 55px;
+}
+
+.slide-title.primary {
+	background: linear-gradient(to right, rgba($colorPrimaryGradient, 0.8), rgba($colorSecondaryGradient, 0.9));
+}
+
