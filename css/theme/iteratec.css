@@ -342,7 +342,7 @@ li::before {
     height: 75%;
     flex-direction: row;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
     padding-bottom: 6em; }
     .reveal .slides section.title-slide .title-meta, .reveal .slides section.title-slide .contact-meta, .reveal .slides section.contact-slide .title-meta, .reveal .slides section.contact-slide .contact-meta {
       margin: 0;

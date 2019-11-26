@@ -149,7 +149,7 @@ li::before {
         height: 75%;
         flex-direction: row;
         justify-content: space-between;
-        align-items: end;
+        align-items: flex-end;
         padding-bottom: 6em;
         .title-meta, .contact-meta {
             margin: 0;
