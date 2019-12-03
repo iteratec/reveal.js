@@ -1,0 +1,194 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #000;
+$headingColor: #a92183;
+
+$mainFontSize: 1.25em;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.0em;
+$heading2Size: 1.5em;
+$heading3Size: 1.25em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+    &, h1, h2, h3, h4, h5, h6 {
+        color: #fff;
+    }
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+$mainColorInverse: #fff;
+$colorBlueLight: #cde6f5;
+$colorBlueMedium: #91c3e6;
+$colorTurquoise: #008cd2;
+$colorLavender: #e6bedc;
+$colorIteragenta: #a92183;
+$colorPurpleDark: #731964;
+$colorYellowBrown: #ebd7be;
+$colorSand: #e1c39b;
+
+$colorPrimaryGradient: #6a0d58;
+$colorSecondaryGradient: #97127c;
+
+ul li {
+    list-style-type: none;
+    position: relative;
+    &::before {
+        content: '\203A';
+        position: absolute;
+        transform: scale(0.8, 1);
+        left: -0.8em;
+        top: -0.25em;
+        font-size: 1.5em;
+        color: $colorIteragenta;
+    }
+}
+
+.bg-blue-light {
+    background-color: $colorBlueLight;
+}
+
+.bg-blue-medium {
+    background-color: $colorBlueMedium;
+}
+
+.bg-turquoise {
+    background-color: $colorTurquoise;
+}
+
+.bg-lavender {
+    background-color: $colorLavender;
+}
+
+.bg-iteragenta {
+    background-color: $colorIteragenta;
+}
+
+.bg-purple-dark {
+    background-color: $colorPurpleDark;
+}
+
+.bg-yellow-brown {
+    background-color: $colorYellowBrown;
+}
+
+.bg-sand {
+    background-color: $colorSand;
+}
+
+.blue-light {
+    color: $colorBlueLight;
+}
+
+.blue-medium {
+    color: $colorBlueMedium;
+}
+
+.turquoise {
+    color: $colorTurquoise;
+}
+
+.lavender {
+    color: $colorLavender;
+}
+
+.iteragenta {
+    color: $colorIteragenta;
+}
+
+.purple-dark {
+    color: $colorPurpleDark;
+}
+
+.yellow-brown {
+    color: $colorYellowBrown;
+}
+
+.sand {
+    color: $colorSand;
+}
+
+.reveal .slides section {
+    flex-direction: column;
+    img {
+        border: none;
+        box-shadow: none;
+    }
+    &.title-slide, &.contact-slide {
+        height: 75%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 6em;
+        .title-meta, .contact-meta {
+            margin: 0;
+            text-align: right;
+        }
+        .contact-meta a {
+            color: $mainColor;
+            &:hover {
+                color: $linkColorHover;
+            }
+        }
+    }
+    &.contact-slide > div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+    &.title-slide .text-box {
+        padding-top: 4em;
+    }
+    .text-box {
+        min-width: 35%;
+        max-width: 50%;
+        min-height: 6em;
+        padding: 1em 4em 0.5em 1em;
+        text-align: left;
+        color: $mainColorInverse;
+        &.primary {
+            background: linear-gradient(to right, rgba($colorPrimaryGradient, 0.8), rgba($colorSecondaryGradient, 0.9));
+            h1, h2 {
+                color: $mainColorInverse;
+            }
+            a {
+                color: inherit;
+                z-index: 1;
+                &:hover {
+                    color: $linkColorHover;
+                }
+            }
+        }
+    }
+}
