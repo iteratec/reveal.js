@@ -1,3 +1,11 @@
+# iteratec Theme
+
+This is a fork to maintain our corporate design as reveal.js theme.
+
+See [css/theme/source/iteratec.scss](css/theme/source/iteratec.scss). Build changes with `npm run build`.
+
+The original code, themes and documentation remain unchanged
+
 # reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.svg?branch=master)](https://travis-ci.org/hakimel/reveal.js) <a href="https://slides.com?ref=github"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://revealjs.com/).
