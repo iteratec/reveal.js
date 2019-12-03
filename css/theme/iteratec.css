@@ -272,18 +272,17 @@ body {
   .backgrounds {
     background-color: #fff; } }
 
-li {
+ul li {
   list-style-type: none;
   position: relative; }
-
-li::before {
-  content: '\203A';
-  position: absolute;
-  transform: scale(0.8, 1);
-  left: -0.8em;
-  top: -0.25em;
-  font-size: 1.5em;
-  color: #a92183; }
+  ul li::before {
+    content: '\203A';
+    position: absolute;
+    transform: scale(0.8, 1);
+    left: -0.8em;
+    top: -0.25em;
+    font-size: 1.5em;
+    color: #a92183; }
 
 .bg-blue-light {
   background-color: #cde6f5; }
